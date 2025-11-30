@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "quantaledger_app.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "quantaledger_app.py" }
+  ]
+}
